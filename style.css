@@ -1,0 +1,50 @@
+body {
+  background: #f4e8d3;
+  height: 100vh;
+}
+.accordion {
+  background: #333;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  background-image: unset !important;
+  background-color: transparent;
+}
+
+span {
+  color: red;
+}
+
+.space {
+  height: 100%;
+  width: 100%;
+}
+
+.space .mission-moon {
+  max-width: 400px;
+  overflow: hidden;
+}
+
+i {
+  position: absolute;
+  left: 30%;
+  font-size: 40px;
+  color: red;
+  height: 50px;
+  width: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 2px 0 0 10px;
+  z-index: 2;
+}
+
+.mission-moon .earth {
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+.mission-moon .earth:hover {
+  filter: none;
+  scale: 1.1;
+}
